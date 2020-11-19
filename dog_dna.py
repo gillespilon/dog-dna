@@ -13,7 +13,10 @@ import pandas as pd
 
 pd.options.display.max_rows = None
 pd.options.display.max_columns = None
-pd.set_option('display.width', 1000)
+pd.options.display.width = 1000
+pd.options.display.max_columns = 100
+pd.options.display.max_colwidth = 200
+pd.options.display.max_rows = 500
 
 FILE_RAW = 'dog_dna_raw.csv'
 FILE_MUNGED= 'dog_dna_munged.csv'
